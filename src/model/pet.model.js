@@ -10,6 +10,9 @@ const petSchema = new mongoose.Schema({
         cost: {type:Number},
         veri: {type:String},
         rating: {type:String}
+},{
+        timestamps: true,
+        versionkey: false
 })
 
 module.exports = mongoose.model("pets", petSchema)
